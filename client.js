@@ -1,7 +1,10 @@
 const net = require("node:net");
 const { ask, clearLine, moveCursor, rl } = require("./utils");
 
-const socket = net.createConnection({ port: 8000 }, async () => {
+const PORT = 5500;
+const HOST = "52.67.83.104";
+
+const socket = net.createConnection({ host: HOST, port: PORT }, async () => {
 	console.log("Connected to the server.");
 
 	ask(socket);
