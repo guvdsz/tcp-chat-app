@@ -56,11 +56,6 @@ const HOST = "0.0.0.0"; // ou o IP da interface de rede do servidor
 const PORT = 5500;
 const HOST = "ENDERECO_DO_SERVIDOR";
 ```
-
-Use `0.0.0.0` no servidor somente quando for necessário aceitar conexões em
-todas as interfaces. Em produção, prefira restringir o bind e as regras de
-firewall às interfaces e origens necessárias.
-
 ## Como executar
 
 ### 1. Inicie o servidor
